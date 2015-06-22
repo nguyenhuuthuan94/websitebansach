@@ -264,6 +264,11 @@ namespace WebSiteBanSach.Controllers
                 Response.StatusCode = 404;
                 return null;
             }
+            List<ChiTietDonHang> lstctdh = db.ChiTietDonHangs.Where(n => n.MaDonHang == MaDonHang).ToList();
+            foreach (var item in lstctdh)
+            {
+                db.ChiTietDonHangs.Remove(item);
+            }
             db.DonHangs.Remove(dh);
             db.SaveChanges();
             return RedirectToAction("LichSuMuaHang");
