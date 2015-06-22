@@ -171,10 +171,12 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NguoiDungController.cs" />
     <Compile Include="Controllers\NhaXuatBanController.cs" />
+    <Compile Include="Controllers\QuanLyChuDeController.cs" />
     <Compile Include="Controllers\QuanLyDonHangController.cs" />
     <Compile Include="Controllers\QuanLySanPhamController.cs" />
     <Compile Include="Controllers\QuanLyTaiKhoanController.cs" />
     <Compile Include="Controllers\SachController.cs" />
+    <Compile Include="Controllers\TacGiaController.cs" />
     <Compile Include="Controllers\TimKiemController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -615,6 +617,16 @@
     <Content Include="Views\QuanLyDonHang\ThongKe.cshtml" />
     <Content Include="Views\QuanLyTaiKhoan\AdminProfile.cshtml" />
     <Content Include="Views\NguoiDung\LichSuMuaHang.cshtml" />
+    <Content Include="Views\TacGia\DanhMucTacGia.cshtml" />
+    <Content Include="Views\TacGia\TacGiaPartial.cshtml" />
+    <Content Include="Views\TacGia\SachTheoTacGia.cshtml" />
+    <Content Include="Views\NguoiDung\ChinhSua.cshtml" />
+    <Content Include="Views\NguoiDung\Xoa.cshtml" />
+    <Content Include="Views\QuanLyChuDe\ThemMoi.cshtml" />
+    <Content Include="Views\QuanLyChuDe\ChinhSua.cshtml" />
+    <Content Include="Views\QuanLyChuDe\HienThi.cshtml" />
+    <Content Include="Views\QuanLyChuDe\Xoa.cshtml" />
+    <Content Include="Views\QuanLyChuDe\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

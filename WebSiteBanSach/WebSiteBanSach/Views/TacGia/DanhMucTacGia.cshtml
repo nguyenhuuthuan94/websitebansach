@@ -1,9 +1,9 @@
 ﻿@using WebSiteBanSach.Models
-@model List<NhaXuatBan>
+@model List<TacGia>
 @*Css cho trang chủ ở trong thư mục content*@
 <link href="~/Content/TrangChuCss.css" rel="stylesheet" />
 @{
-    ViewBag.Title = "DanhMucNXB";
+    ViewBag.Title = "DanhMucTacGia";
     Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
 }
 @*Ẩn div chủ đề và div nhà xuất bản bên dưới*@
@@ -12,20 +12,24 @@
         display: none;
     }
 </style>
-<hr />
-<h2 style="margin-left:2%;font-weight:normal;color:black">Danh mục Nhà xuất bản</h2>
-<hr />
 <div style="clear:both"></div>
 <div id="SanPham" style="width:100%">
     @*Hiển thị danh mục nhà xuất bản*@
-    <div style="float:left;width:30%;">
+    <div style="float:none;width:70%;">
         @foreach (var item in Model)
         {
-            <div class="itemNXB"><i class="fa fa-book"></i><a href="@Url.Action("SachTheoNXB", new { @MaNXB=item.MaNXB })"><h3> @item.TenNXB</h3></a></div>
+
+            <div class="itemTacGia"><a href="@Url.Action("SachTheoTacGia", new { @MaTacGia=item.MaTacGia })"><h3 id="TieuDeTacGia"> @item.TenTacGia</h3></a></div>
+
             <br />
 
         }
     </div>
-
+    }
 </div>
 <div style="clear:both"></div>
+<style>
+    .itemTacGia {
+        font-weight: normal;
+    }
+</style>

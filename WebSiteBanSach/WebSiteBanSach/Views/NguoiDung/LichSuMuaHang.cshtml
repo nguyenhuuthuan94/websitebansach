@@ -24,7 +24,7 @@
             @Html.DisplayNameFor(model => model.First().TinhTrangGiaoHang)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.First().MaKH)
+            @Html.DisplayNameFor(model => model.First().KhachHang.HoTen)
         </th>
         <th></th>
     </tr>
@@ -50,6 +50,14 @@
             <td>
                 @Html.DisplayFor(modelItem => item.KhachHang.HoTen)
             </td>
+            @{if (item.TinhTrangGiaoHang == 0)
+                {
+                    <td>
+                        @Html.ActionLink("Chỉnh sửa", "ChinhSua", new { @MaDonHang = item.MaDonHang }) |
+                        @Html.ActionLink("Thanh toán", "ThanhToan", new { @MaDonHang = item.MaDonHang }) |
+                    </td>
+                }
+            }
         </tr>
     }
 

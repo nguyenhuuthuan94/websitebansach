@@ -1,0 +1,23 @@
+﻿@using WebSiteBanSach.Models;
+@model List<TacGia>
+<h1 id="TieuDeTacGia">Tac gia</h1>
+@foreach (var item in Model)
+{
+    <div class="itemTacGia"><a href="@Url.Action("SachTheoTacGia", new { @MaTacGia=item.MaTacGia })"> @item.TenTacGia</a></div>
+}
+<div class="itemTacGia"><a href="@Url.Action("DanhMucTacGia")"> Tác giả khác...</a></div>
+
+@*css menu nhà xuất bản*@
+<style>
+    #TieuDeTacGia {
+        padding: 15px 0 15px 15px;
+        color: white;
+        width: 235px;
+        background-color: #de5529;
+    }
+
+    .itemTacGia {
+        font-weight: normal;
+    }
+</style>
+

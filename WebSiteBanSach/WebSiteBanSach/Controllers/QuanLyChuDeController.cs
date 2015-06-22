@@ -10,16 +10,16 @@ using System.IO;
 
 namespace WebSiteBanSach.Controllers
 {
-    public class QuanLyDonHangController : Controller
+    public class QuanLyChuDeController : Controller
     {
         //
-        // GET: /QuanLySanPham/
+        // GET: /QuanLyChuDe/
         QuanLyBanSachEntities db = new QuanLyBanSachEntities();
         public ActionResult Index(int? page)
         {
             int pageNumber = (page ?? 1);
             int pageSize = 10;
-            return View(db.DonHangs.ToList().OrderBy(n => n.MaDonHang).ToPagedList(pageNumber, pageSize));
+            return View(db.ChuDes.ToList().OrderBy(n => n.MaChuDe).ToPagedList(pageNumber, pageSize));
         }
         //Thêm mới 
         [HttpGet]
@@ -29,83 +29,83 @@ namespace WebSiteBanSach.Controllers
         }
         [HttpPost]
         [ValidateInput(false)]
-        public ActionResult ThemMoi(DonHang dh, HttpPostedFileBase fileUpload)
+        public ActionResult ThemMoi(ChuDe cd, HttpPostedFileBase fileUpload)
         {
             //Thêm vào cơ sở dữ liệu
             if (ModelState.IsValid)
             {
-                db.DonHangs.Add(dh);
+                db.ChuDes.Add(cd);
                 db.SaveChanges();
             }
             return View();
         }
         //Chỉnh sửa sản phẩm
         [HttpGet]
-        public ActionResult ChinhSua(int MaDonHang)
+        public ActionResult ChinhSua(int MaChuDe)
         {
             //Lấy ra đối tượng sách theo mã 
-            DonHang dh = db.DonHangs.SingleOrDefault(n => n.MaDonHang == MaDonHang);
-            if (dh == null)
+            ChuDe cd = db.ChuDes.SingleOrDefault(n => n.MaChuDe == MaChuDe);
+            if (cd == null)
             {
                 Response.StatusCode = 404;
                 return null;
             }
-            return View(dh);
+            return View(cd);
         }
         [HttpPost]
         [ValidateInput(false)]
-        public ActionResult ChinhSua(DonHang dh, FormCollection f)
+        public ActionResult ChinhSua(ChuDe cd, FormCollection f)
         {
             //Thêm vào cơ sở dữ liệu
             if (ModelState.IsValid)
             {
                 //Thực hiện cập nhận trong model
-                db.Entry(dh).State = System.Data.Entity.EntityState.Modified;
+                db.Entry(cd).State = System.Data.Entity.EntityState.Modified;
                 db.SaveChanges();
             }
             return RedirectToAction("Index");
 
         }
         //Hiển thị sản phẩm
-        public ActionResult HienThi(int MaDonHang)
+        public ActionResult HienThi(int MaChuDe)
         {
 
             //Lấy ra đối tượng sách theo mã 
-            DonHang dh = db.DonHangs.SingleOrDefault(n => n.MaDonHang == MaDonHang);
-            if (dh == null)
+            ChuDe cd = db.ChuDes.SingleOrDefault(n => n.MaChuDe == MaChuDe);
+            if (cd == null)
             {
                 Response.StatusCode = 404;
                 return null;
             }
 
-            return View(dh);
+            return View(cd);
 
         }
         //Xóa sản phẩm
         [HttpGet]
-        public ActionResult Xoa(int MaDonHang)
+        public ActionResult Xoa(int MaChuDe)
         {
             //Lấy ra đối tượng sách theo mã 
-            DonHang dh = db.DonHangs.SingleOrDefault(n => n.MaDonHang == MaDonHang);
-            if (dh == null)
+            ChuDe cd = db.ChuDes.SingleOrDefault(n => n.MaChuDe == MaChuDe);
+            if (cd == null)
             {
                 Response.StatusCode = 404;
                 return null;
             }
 
-            return View(dh);
+            return View(cd);
         }
         [HttpPost, ActionName("Xoa")]
 
-        public ActionResult XacNhanXoa(int MaDonHang)
+        public ActionResult XacNhanXoa(int MaChuDe)
         {
-            DonHang dh = db.DonHangs.SingleOrDefault(n => n.MaDonHang == MaDonHang);
-            if (dh == null)
+            ChuDe cd = db.ChuDes.SingleOrDefault(n => n.MaChuDe == MaChuDe);
+            if (cd == null)
             {
                 Response.StatusCode = 404;
                 return null;
             }
-            db.DonHangs.Remove(dh);
+            db.ChuDes.Remove(cd);
             try
             {
                 db.SaveChanges();

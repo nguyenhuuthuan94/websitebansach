@@ -183,10 +183,27 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li><a href="#">Tác Giả</a></li>
+                                        <li class="dropdown yamm-fw">
+                                            <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Tác giả</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <div class="yamm-content">
+                                                        <div class="row">
+                                                            <div class="col-md-3 col-sm-4">
+                                                                <div class="section">
+
+                                                                    @Html.Action("TacGiaPartial", "TacGia")
+
+                                                                </div><!-- /.section -->
+                                                            </div><!-- /.col -->
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
                                         <li class="active"><a href="#">Sách Giảm Giá</a></li>
                                         <li class="hidden-sm"><a href="#">Sách bán chạy</a></li>
-                                        <li><a href="#">Sách Mới Phát Hành</a></li>
+                                        <li><a onclick="javascript:GoToHomePage()" href="javascript:void(0)"> Sách mới phát hành</a></li>
                                     </ul><!-- /.nav -->
                                 </div><!-- /.collapse navbar-collapse -->
                             </nav><!-- /.yamm -->

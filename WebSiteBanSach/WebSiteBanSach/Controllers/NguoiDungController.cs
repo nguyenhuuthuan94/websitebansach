@@ -191,5 +191,83 @@ namespace WebSiteBanSach.Controllers
             }
             return View(ldh);
         }
+        //Chỉnh sửa sản phẩm
+        [HttpGet]
+        public ActionResult ChinhSua(int MaDonHang)
+        {
+            //Lấy ra đối tượng sách theo mã 
+            DonHang dh = db.DonHangs.SingleOrDefault(n => n.MaDonHang == MaDonHang);
+            List<ChiTietDonHang> ctdh = db.ChiTietDonHangs.Where(n => n.MaDonHang == MaDonHang).ToList();
+            if (dh == null)
+            {
+                Response.StatusCode = 404;
+                return null;
+            }
+            return View(ctdh);
+        }
+        [HttpPost]
+        [ValidateInput(false)]
+        public ActionResult ChinhSua(List<ChiTietDonHang> ctdh, FormCollection f)
+        {
+            //Thêm vào cơ sở dữ liệu
+            if (ModelState.IsValid)
+            {
+                //foreach (var item in ctdh)
+                //{
+                //    //Thực hiện cập nhận trong model
+                //    db.Entry(item).State = System.Data.Entity.EntityState.Modified;
+                //    db.SaveChanges();
+                //}
+            }
+            return RedirectToAction("LichSuMuaHang");
+
+        }
+        //Hiển thị sản phẩm
+        public ActionResult ThanhToan(int MaDonHang)
+        {
+
+            //Lấy ra đối tượng sách theo mã 
+            db.DonHangs.SingleOrDefault(n => n.MaDonHang == MaDonHang).DaThanhToan = "Xong";
+            db.DonHangs.SingleOrDefault(n => n.MaDonHang == MaDonHang).TinhTrangGiaoHang = 1;
+            db.SaveChanges();
+            DonHang dh = db.DonHangs.SingleOrDefault(n => n.MaDonHang == MaDonHang);
+            if (dh == null)
+            {
+                Response.StatusCode = 404;
+                return null;
+            }
+
+            return RedirectToAction("LichSuMuaHang");
+
+        }
+        //Xóa sản phẩm
+        [HttpGet]
+        public ActionResult Xoa(int MaDonHang)
+        {
+            //Lấy ra đối tượng sách theo mã 
+            DonHang dh = db.DonHangs.SingleOrDefault(n => n.MaDonHang == MaDonHang);
+            if (dh == null)
+            {
+                Response.StatusCode = 404;
+                return null;
+            }
+
+            return View(dh);
+        }
+        [HttpPost, ActionName("Xoa")]
+
+        public ActionResult XacNhanXoa(int MaDonHang)
+        {
+            DonHang dh = db.DonHangs.SingleOrDefault(n => n.MaDonHang == MaDonHang);
+            if (dh == null)
+            {
+                Response.StatusCode = 404;
+                return null;
+            }
+            db.DonHangs.Remove(dh);
+            db.SaveChanges();
+            return RedirectToAction("LichSuMuaHang");
+
+        }
     }
 }
