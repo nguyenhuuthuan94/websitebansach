@@ -1,0 +1,7 @@
+﻿
+@{if(@ViewBag.TenTaiKhoan == "Đăng Nhập")
+  {<a href="@Url.Action("DangNhap","NguoiDung")"> @ViewBag.TenTaiKhoan</a>}
+                                                                          else
+  {<a href="@Url.Action("ThongTinKhachHang","NguoiDung")"> @ViewBag.TenTaiKhoan</a> 
+    <a href="@Url.Action("LichSuMuaHang","NguoiDung")"> Lịch sử mua hàng</a> }
+} 

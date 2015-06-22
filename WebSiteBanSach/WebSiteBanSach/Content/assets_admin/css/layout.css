@@ -1,0 +1,37 @@
+﻿div
+{
+}
+ 
+#header
+{
+	
+}
+ 
+#header .help_link
+{
+	display:block;
+	background:url(../images/help.png) no-repeat;
+	padding:15px 10px 15px 45px;
+	float:right;
+}
+ 
+.pagination
+{
+	margin:0;
+}
+.clr
+{
+	clear:both;
+}
+.qq-upload-button
+{
+	background:#F00;
+}
+ .button-controls
+ {
+	 padding:10px 0;
+ }
+ .btn 
+ {
+	 margin:0 2px;
+ }

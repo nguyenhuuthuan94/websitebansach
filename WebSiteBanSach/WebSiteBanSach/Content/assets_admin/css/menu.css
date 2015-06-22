@@ -1,0 +1,43 @@
+﻿#admin-menu
+{
+	border:1px #999999 solid;
+
+}
+#admin-menu ul
+{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+		
+}
+#admin-menu ul li
+{
+	background:#006699;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:110%;
+}
+#admin-menu ul li a
+{
+	color:#006699;
+}
+#admin-menu ul li div
+{
+	padding:5px 5px 5px 5px;
+}
+
+
+#admin-menu ul li ul
+{
+	margin:0;
+
+}
+
+#admin-menu ul li ul li
+{
+	background:#EEEEEE;
+	color:#FFFFFF;
+	font-weight:normal;
+	font-size:100%;
+	padding:2px 5px 2px 5px;
+}
