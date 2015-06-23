@@ -102,7 +102,16 @@ namespace WebSiteBanSach.Controllers
                 Response.StatusCode = 404;
                 return null;
             }
-            db.KhachHangs.Remove(kh);
+            kh.DiaChi = null;
+            kh.DienThoai = null;
+            kh.Email = null;
+            kh.GioiTinh = null;
+            kh.HoTen = null;
+            kh.NgaySinh = null;
+            kh.MatKhau = null;
+            kh.TaiKhoan = null;
+          
+            db.Entry(kh).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
             return RedirectToAction("Index");
 

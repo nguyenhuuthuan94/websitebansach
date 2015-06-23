@@ -627,6 +627,7 @@
     <Content Include="Views\QuanLyChuDe\HienThi.cshtml" />
     <Content Include="Views\QuanLyChuDe\Xoa.cshtml" />
     <Content Include="Views\QuanLyChuDe\Index.cshtml" />
+    <Content Include="Views\NguoiDung\DangKyPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,6 @@
+﻿@{if (@ViewBag.TenTaiKhoan == "Đăng Ký")
+{<a href="@Url.Action("DangKy","NguoiDung")"> @ViewBag.TenTaiKhoan</a>}
+else
+{
+    <a href="@Url.Action("Logout","NguoiDung")"> Logout </a> }
+} 

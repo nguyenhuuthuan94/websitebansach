@@ -105,7 +105,11 @@ namespace WebSiteBanSach.Controllers
                 Response.StatusCode = 404;
                 return null;
             }
-            db.ChuDes.Remove(cd);
+
+            cd.Saches = null;
+            cd.TenChuDe = null;
+
+            db.Entry(cd).State = System.Data.Entity.EntityState.Modified;
             try
             {
                 db.SaveChanges();

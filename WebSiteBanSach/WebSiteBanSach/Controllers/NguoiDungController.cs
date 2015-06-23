@@ -86,21 +86,166 @@ namespace WebSiteBanSach.Controllers
             return View();
         }
         [HttpPost]
-        // [ValidateAntiForgeryToken]
-        public ActionResult DangKy(KhachHang kh)
+        //[ValidateInput(false)]
+        public ActionResult DangKy(KhachHang kh, FormCollection f)
         {
-            //if (ModelState.IsValid)
-            //{
-            //    //Chèn dữ liệu vào bảng khách hàng
-            //    db.KhachHangs.Add(kh);
-            //    //Lưu vào csdl 
-            //    db.SaveChanges();
-            //}
-            //return View();
+            
+            string sHoTen = f["txtHoTen"].ToString();
+            string sNgaySinh = f["txtNgaySinh"].ToString();
+            string sGioiTinh = f["txtGioiTinh"].ToString();
+            string sDienThoai = f["txtDienThoai"].ToString();
+            string sEmail = f["txtEmail"].ToString();
+            string sDiaChi = f["txtDiaChi"].ToString();
+            string sTaiKhoan = f["txtTaiKhoan"].ToString();
+            string sMatKhau1 = f.Get("txtMatKhau1").ToString();
+            string sMatKhau2 = f.Get("txtMatKhau2").ToString();
+
+            ViewBag.ThongBao = "";
+
+            if (sHoTen == "")
+            {
+                ViewBag.ThongBao = "Họ tên không được để trống!";
+                return View();
+            }
+            if (sNgaySinh == "")
+            {
+                ViewBag.ThongBao = "Ngày sinh không được để trống!";
+                return View();
+            }
+            if (sGioiTinh == "")
+            {
+                ViewBag.ThongBao = "Giới tính không được để trống!";
+                return View();
+            }
+            if (sDienThoai == "")
+            {
+                ViewBag.ThongBao = "Điện thoại không được để trống!";
+                return View();
+            }
+            if (sEmail == "")
+            {
+                ViewBag.ThongBao = "Email không được để trống!";
+                return View();
+            }
+            if (sDiaChi == "")
+            {
+                ViewBag.ThongBao = "Địa chỉ không được để trống!";
+                return View();
+            }
+            if (sTaiKhoan == "")
+            {
+                ViewBag.ThongBao = "Tài khoản không được để trống!";
+                return View();
+            }
+            else
+            {
+                KhachHang temp = null;
+                temp = db.KhachHangs.FirstOrDefault(n => n.TaiKhoan == sTaiKhoan);
+                if (temp != null)
+                    ViewBag.ThongBao = "Tài khoản đã có người đăng ký";
+            }
+            if (sMatKhau1 == "" || sMatKhau2 == "")
+            {
+                ViewBag.ThongBao = "Mật khẩu không được để trống!";
+                return View();
+            }
+            if (sMatKhau1 != sMatKhau2)
+            {
+                ViewBag.ThongBao = "Mật khẩu không trùng khớp!";
+                return View();
+            }
+
+            
+
+            if (ViewBag.ThongBao == "")
+            {
+                ViewBag.ThongBao = "Đăng ký thành công!";
+                //KhachHang kh = new KhachHang();
+                kh.HoTen = sHoTen;
+                kh.GioiTinh = sGioiTinh;
+                kh.MatKhau = sMatKhau1;
+                kh.NgaySinh = Convert.ToDateTime(sNgaySinh);
+                kh.TaiKhoan = sTaiKhoan;
+                kh.DienThoai = sDienThoai;
+                kh.DiaChi = sDiaChi;
+                kh.Email = sEmail;
+
+                if (ModelState.IsValid)
+                {
+                    db.KhachHangs.Add(kh);
+                    db.SaveChanges();
+                }
+                return View();
+            }
+            return View();
+            
+            /*
+            ViewBag.ThongBao = "";
+
+            if (kh.HoTen == "")
+            {
+                ViewBag.ThongBao = "Họ tên không được để trống!";
+                return View();
+            }
+
+            string sNgaySinh = f["txtNgaySinh"].ToString();
+
+            if (sNgaySinh == "")
+            {
+                ViewBag.ThongBao = "Ngày sinh không được để trống!";
+                return View();
+            }
+            else
+                kh.NgaySinh = Convert.ToDateTime(sNgaySinh);
+
+            if (kh.GioiTinh == "")
+            {
+                ViewBag.ThongBao = "Giới tính không được để trống!";
+                return View();
+            }
+            if (kh.DienThoai == "")
+            {
+                ViewBag.ThongBao = "Điện thoại không được để trống!";
+                return View();
+            }
+            if (kh.Email == "")
+            {
+                ViewBag.ThongBao = "Email không được để trống!";
+                return View();
+            }
+            if (kh.DiaChi == "")
+            {
+                ViewBag.ThongBao = "Địa chỉ không được để trống!";
+                return View();
+            }
+            if (kh.TaiKhoan == "")
+            {
+                ViewBag.ThongBao = "Tài khoản không được để trống!";
+                return View();
+            }
+            else
+            {
+                KhachHang temp = null;
+                temp = db.KhachHangs.FirstOrDefault(n => n.TaiKhoan == kh.TaiKhoan);
+                if (temp != null)
+                    ViewBag.ThongBao = "Tài khoản đã có người đăng ký";
+            }
+            string sMatKhau2 = f.Get("txtMatKhau2").ToString();
+
+            if (kh.MatKhau == "" || sMatKhau2 == "")
+            {
+                ViewBag.ThongBao = "Mật khẩu không được để trống!";
+                return View();
+            }
+            if (kh.MatKhau != sMatKhau2)
+            {
+                ViewBag.ThongBao = "Mật khẩu không trùng khớp!";
+                return View();
+            }
 
             repository.Insert(kh);
             repository.Save();
-            return View();
+            return View();*/
         }
         [HttpGet]
         public ActionResult DangNhap()
@@ -142,6 +287,30 @@ namespace WebSiteBanSach.Controllers
             else
                 ViewBag.TenTaiKhoan = kh.TaiKhoan;
             return PartialView();
+        }
+
+        //tạo partial đăng nhập
+        public ActionResult DangKyPartial()
+        {
+            if (kh == null)
+                ViewBag.TenTaiKhoan = "Đăng Ký";
+
+            return PartialView();
+        }
+
+        public ActionResult Logout()
+        {
+            if (kh == null)
+            {
+                Response.StatusCode = 404;
+                return null;
+            }
+
+            kh = null;
+            Session.Clear();
+
+            return RedirectToAction("Index", "Home");
+
         }
 
         //Chỉnh sửa thông tin tài khoản
