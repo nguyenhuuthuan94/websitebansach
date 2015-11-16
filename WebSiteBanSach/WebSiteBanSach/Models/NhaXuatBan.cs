@@ -14,16 +14,9 @@ namespace WebSiteBanSach.Models
     
     public partial class NhaXuatBan
     {
-        public NhaXuatBan()
-        {
-            this.Saches = new HashSet<Sach>();
-        }
-    
         public int MaNXB { get; set; }
         public string TenNXB { get; set; }
         public string DiaChi { get; set; }
         public string DienThoai { get; set; }
-    
-        public virtual ICollection<Sach> Saches { get; set; }
     }
 }

@@ -14,11 +14,6 @@ namespace WebSiteBanSach.Models
     
     public partial class KhachHang
     {
-        public KhachHang()
-        {
-            this.DonHangs = new HashSet<DonHang>();
-        }
-    
         public int MaKH { get; set; }
         public string HoTen { get; set; }
         public Nullable<System.DateTime> NgaySinh { get; set; }
@@ -28,7 +23,5 @@ namespace WebSiteBanSach.Models
         public string MatKhau { get; set; }
         public string Email { get; set; }
         public string DiaChi { get; set; }
-    
-        public virtual ICollection<DonHang> DonHangs { get; set; }
     }
 }

@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db1ce907233a3c4e8bb553a55200989dc5Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'db1ce907233a3c4e8bb553a55200989dc5.dbo.aaaa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="aaaa">
+    <Key>
+      <PropertyRef Name="dsa" />
+    </Key>
+    <Property Name="dsa" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="aaaa" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'db1ce907233a3c4e8bb553a55200989dc5.dbo.ChiTietDonHang' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ChiTietDonHang">
+    <Key>
+      <PropertyRef Name="MaDonHang" />
+      <PropertyRef Name="MaSach" />
+    </Key>
+    <Property Name="MaDonHang" Type="int" Nullable="false" />
+    <Property Name="MaSach" Type="int" Nullable="false" />
+    <Property Name="SoLuong" Type="int" />
+    <Property Name="DonGia" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'db1ce907233a3c4e8bb553a55200989dc5.dbo.ChuDe' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ChuDe">
+    <Key>
+      <PropertyRef Name="MaChuDe" />
+    </Key>
+    <Property Name="MaChuDe" Type="int" Nullable="false" />
+    <Property Name="TenChuDe" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'db1ce907233a3c4e8bb553a55200989dc5.dbo.ddddd' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ddddd">
+    <Key>
+      <PropertyRef Name="da" />
+    </Key>
+    <Property Name="da" Type="date" Nullable="false" />
+    <Property Name="d" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'db1ce907233a3c4e8bb553a55200989dc5.dbo.DonHang' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DonHang">
+    <Key>
+      <PropertyRef Name="MaDonHang" />
+    </Key>
+    <Property Name="MaDonHang" Type="int" Nullable="false" />
+    <Property Name="NgayGiao" Type="smalldatetime" />
+    <Property Name="NgayDat" Type="smalldatetime" />
+    <Property Name="DaThanhToan" Type="nvarchar" MaxLength="50" />
+    <Property Name="TinhTrangGiaoHang" Type="int" />
+    <Property Name="MaKH" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'db1ce907233a3c4e8bb553a55200989dc5.dbo.dsadsa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="dsadsa">
+    <Key>
+      <PropertyRef Name="dsa" />
+    </Key>
+    <Property Name="dsa" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="dsads" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'db1ce907233a3c4e8bb553a55200989dc5.dbo.KhachHang' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="KhachHang">
+    <Key>
+      <PropertyRef Name="MaKH" />
+    </Key>
+    <Property Name="MaKH" Type="int" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgaySinh" Type="smalldatetime" />
+    <Property Name="GioiTinh" Type="nvarchar" MaxLength="3" />
+    <Property Name="DienThoai" Type="varchar" MaxLength="50" />
+    <Property Name="TaiKhoan" Type="varchar" MaxLength="50" />
+    <Property Name="MatKhau" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="DiaChi" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'db1ce907233a3c4e8bb553a55200989dc5.dbo.NhaXuatBan' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="NhaXuatBan">
+    <Key>
+      <PropertyRef Name="MaNXB" />
+    </Key>
+    <Property Name="MaNXB" Type="int" Nullable="false" />
+    <Property Name="TenNXB" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="100" />
+    <Property Name="DienThoai" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'db1ce907233a3c4e8bb553a55200989dc5.dbo.Sach' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Sach">
+    <Key>
+      <PropertyRef Name="MaSach" />
+    </Key>
+    <Property Name="MaSach" Type="int" Nullable="false" />
+    <Property Name="TenSach" Type="nvarchar" MaxLength="100" />
+    <Property Name="GiaBan" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="MoTa" Type="nvarchar(max)" />
+    <Property Name="NgayCapNhat" Type="smalldatetime" />
+    <Property Name="AnhBia" Type="nvarchar(max)" />
+    <Property Name="SoLuongTon" Type="int" />
+    <Property Name="MaChuDe" Type="int" />
+    <Property Name="MaNXB" Type="int" />
+    <Property Name="Moi" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'db1ce907233a3c4e8bb553a55200989dc5.dbo.sysdiagrams' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="name" />
+      <PropertyRef Name="principal_id" />
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'db1ce907233a3c4e8bb553a55200989dc5.dbo.TacGia' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TacGia">
+    <Key>
+      <PropertyRef Name="MaTacGia" />
+    </Key>
+    <Property Name="MaTacGia" Type="int" Nullable="false" />
+    <Property Name="TenTacGia" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="100" />
+    <Property Name="TieuSu" Type="nvarchar(max)" />
+    <Property Name="DienThoai" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'db1ce907233a3c4e8bb553a55200989dc5.dbo.ThamGia' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ThamGia">
+    <Key>
+      <PropertyRef Name="MaSach" />
+      <PropertyRef Name="MaTacGia" />
+    </Key>
+    <Property Name="MaSach" Type="int" Nullable="false" />
+    <Property Name="MaTacGia" Type="int" Nullable="false" />
+    <Property Name="VaiTro" Type="nvarchar" MaxLength="50" />
+    <Property Name="ViTri" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="db1ce907233a3c4e8bb553a55200989dc5ModelStoreContainer">
+    <EntitySet Name="aaaa" EntityType="Self.aaaa" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [aaaa].[dsa] AS [dsa], 
+    [aaaa].[aaaa] AS [aaaa]
+    FROM [dbo].[aaaa] AS [aaaa]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ChiTietDonHang" EntityType="Self.ChiTietDonHang" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ChiTietDonHang].[MaDonHang] AS [MaDonHang], 
+    [ChiTietDonHang].[MaSach] AS [MaSach], 
+    [ChiTietDonHang].[SoLuong] AS [SoLuong], 
+    [ChiTietDonHang].[DonGia] AS [DonGia]
+    FROM [dbo].[ChiTietDonHang] AS [ChiTietDonHang]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ChuDe" EntityType="Self.ChuDe" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ChuDe].[MaChuDe] AS [MaChuDe], 
+    [ChuDe].[TenChuDe] AS [TenChuDe]
+    FROM [dbo].[ChuDe] AS [ChuDe]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ddddd" EntityType="Self.ddddd" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ddddd].[da] AS [da], 
+    [ddddd].[d] AS [d]
+    FROM [dbo].[ddddd] AS [ddddd]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DonHang" EntityType="Self.DonHang" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DonHang].[MaDonHang] AS [MaDonHang], 
+    [DonHang].[NgayGiao] AS [NgayGiao], 
+    [DonHang].[NgayDat] AS [NgayDat], 
+    [DonHang].[DaThanhToan] AS [DaThanhToan], 
+    [DonHang].[TinhTrangGiaoHang] AS [TinhTrangGiaoHang], 
+    [DonHang].[MaKH] AS [MaKH]
+    FROM [dbo].[DonHang] AS [DonHang]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="dsadsa" EntityType="Self.dsadsa" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [dsadsa].[dsa] AS [dsa], 
+    [dsadsa].[dsads] AS [dsads]
+    FROM [dbo].[dsadsa] AS [dsadsa]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KhachHang" EntityType="Self.KhachHang" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KhachHang].[MaKH] AS [MaKH], 
+    [KhachHang].[HoTen] AS [HoTen], 
+    [KhachHang].[NgaySinh] AS [NgaySinh], 
+    [KhachHang].[GioiTinh] AS [GioiTinh], 
+    [KhachHang].[DienThoai] AS [DienThoai], 
+    [KhachHang].[TaiKhoan] AS [TaiKhoan], 
+    [KhachHang].[MatKhau] AS [MatKhau], 
+    [KhachHang].[Email] AS [Email], 
+    [KhachHang].[DiaChi] AS [DiaChi]
+    FROM [dbo].[KhachHang] AS [KhachHang]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NhaXuatBan" EntityType="Self.NhaXuatBan" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [NhaXuatBan].[MaNXB] AS [MaNXB], 
+    [NhaXuatBan].[TenNXB] AS [TenNXB], 
+    [NhaXuatBan].[DiaChi] AS [DiaChi], 
+    [NhaXuatBan].[DienThoai] AS [DienThoai]
+    FROM [dbo].[NhaXuatBan] AS [NhaXuatBan]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Sach" EntityType="Self.Sach" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Sach].[MaSach] AS [MaSach], 
+    [Sach].[TenSach] AS [TenSach], 
+    [Sach].[GiaBan] AS [GiaBan], 
+    [Sach].[MoTa] AS [MoTa], 
+    [Sach].[NgayCapNhat] AS [NgayCapNhat], 
+    [Sach].[AnhBia] AS [AnhBia], 
+    [Sach].[SoLuongTon] AS [SoLuongTon], 
+    [Sach].[MaChuDe] AS [MaChuDe], 
+    [Sach].[MaNXB] AS [MaNXB], 
+    [Sach].[Moi] AS [Moi]
+    FROM [dbo].[Sach] AS [Sach]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [sysdiagrams].[name] AS [name], 
+    [sysdiagrams].[principal_id] AS [principal_id], 
+    [sysdiagrams].[diagram_id] AS [diagram_id], 
+    [sysdiagrams].[version] AS [version], 
+    [sysdiagrams].[definition] AS [definition]
+    FROM [dbo].[sysdiagrams] AS [sysdiagrams]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TacGia" EntityType="Self.TacGia" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TacGia].[MaTacGia] AS [MaTacGia], 
+    [TacGia].[TenTacGia] AS [TenTacGia], 
+    [TacGia].[DiaChi] AS [DiaChi], 
+    [TacGia].[TieuSu] AS [TieuSu], 
+    [TacGia].[DienThoai] AS [DienThoai]
+    FROM [dbo].[TacGia] AS [TacGia]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ThamGia" EntityType="Self.ThamGia" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ThamGia].[MaSach] AS [MaSach], 
+    [ThamGia].[MaTacGia] AS [MaTacGia], 
+    [ThamGia].[VaiTro] AS [VaiTro], 
+    [ThamGia].[ViTri] AS [ViTri]
+    FROM [dbo].[ThamGia] AS [ThamGia]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

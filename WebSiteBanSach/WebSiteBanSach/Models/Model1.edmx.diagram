@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f43a34e0c93f406ba6b32e79a79bdda9" Name="Diagram1">
+        <EntityTypeShape EntityType="db1ce907233a3c4e8bb553a55200989dc5Model.aaaa" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db1ce907233a3c4e8bb553a55200989dc5Model.ChiTietDonHang" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db1ce907233a3c4e8bb553a55200989dc5Model.ChuDe" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db1ce907233a3c4e8bb553a55200989dc5Model.ddddd" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db1ce907233a3c4e8bb553a55200989dc5Model.DonHang" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db1ce907233a3c4e8bb553a55200989dc5Model.dsadsa" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db1ce907233a3c4e8bb553a55200989dc5Model.KhachHang" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db1ce907233a3c4e8bb553a55200989dc5Model.NhaXuatBan" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db1ce907233a3c4e8bb553a55200989dc5Model.Sach" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db1ce907233a3c4e8bb553a55200989dc5Model.sysdiagram" Width="1.5" PointX="6.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db1ce907233a3c4e8bb553a55200989dc5Model.TacGia" Width="1.5" PointX="4.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db1ce907233a3c4e8bb553a55200989dc5Model.ThamGia" Width="1.5" PointX="6.75" PointY="7.75" IsExpanded="true" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

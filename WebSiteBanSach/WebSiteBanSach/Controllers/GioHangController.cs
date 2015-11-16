@@ -9,7 +9,7 @@ namespace WebSiteBanSach.Controllers
 {
     public class GioHangController : Controller
     {
-        QuanLyBanSachEntities db = new QuanLyBanSachEntities();
+        db1ce907233a3c4e8bb553a55200989dc5Entities db = new db1ce907233a3c4e8bb553a55200989dc5Entities();
         #region Giỏ hàng
         //Lấy giỏ hàng 
         public List<GioHang> LayGioHang()

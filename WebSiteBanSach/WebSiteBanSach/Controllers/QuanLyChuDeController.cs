@@ -14,7 +14,7 @@ namespace WebSiteBanSach.Controllers
     {
         //
         // GET: /QuanLyChuDe/
-        QuanLyBanSachEntities db = new QuanLyBanSachEntities();
+        db1ce907233a3c4e8bb553a55200989dc5Entities db = new db1ce907233a3c4e8bb553a55200989dc5Entities();
         public ActionResult Index(int? page)
         {
             int pageNumber = (page ?? 1);
@@ -106,7 +106,7 @@ namespace WebSiteBanSach.Controllers
                 return null;
             }
 
-            cd.Saches = null;
+            //cd.Saches = null;
             cd.TenChuDe = null;
 
             db.Entry(cd).State = System.Data.Entity.EntityState.Modified;

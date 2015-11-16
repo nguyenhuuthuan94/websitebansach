@@ -13,10 +13,10 @@ namespace WebSiteBanSach.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QuanLyBanSachEntities : DbContext
+    public partial class db1ce907233a3c4e8bb553a55200989dc5Entities : DbContext
     {
-        public QuanLyBanSachEntities()
-            : base("name=QuanLyBanSachEntities")
+        public db1ce907233a3c4e8bb553a55200989dc5Entities()
+            : base("name=db1ce907233a3c4e8bb553a55200989dc5Entities")
         {
         }
     

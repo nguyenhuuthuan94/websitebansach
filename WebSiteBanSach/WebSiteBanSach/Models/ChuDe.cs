@@ -14,14 +14,7 @@ namespace WebSiteBanSach.Models
     
     public partial class ChuDe
     {
-        public ChuDe()
-        {
-            this.Saches = new HashSet<Sach>();
-        }
-    
         public int MaChuDe { get; set; }
         public string TenChuDe { get; set; }
-    
-        public virtual ICollection<Sach> Saches { get; set; }
     }
 }

@@ -18,8 +18,5 @@ namespace WebSiteBanSach.Models
         public int MaTacGia { get; set; }
         public string VaiTro { get; set; }
         public string ViTri { get; set; }
-    
-        public virtual Sach Sach { get; set; }
-        public virtual TacGia TacGia { get; set; }
     }
 }

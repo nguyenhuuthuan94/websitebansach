@@ -14,7 +14,7 @@ namespace WebSiteBanSach.Controllers
     {
         //
         // GET: /QuanLySanPham/
-        QuanLyBanSachEntities db = new QuanLyBanSachEntities();
+        db1ce907233a3c4e8bb553a55200989dc5Entities db = new db1ce907233a3c4e8bb553a55200989dc5Entities();
 
         public ActionResult Index(int? page)
         {

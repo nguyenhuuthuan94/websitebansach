@@ -9,14 +9,14 @@ namespace WebSiteBanSach.Models
 {
     public class CustomerRepository:ICustomerRepository
     {
-        private QuanLyBanSachEntities db = null;
+        private db1ce907233a3c4e8bb553a55200989dc5Entities db = null;
 
         public CustomerRepository()
         {
-            this.db = new QuanLyBanSachEntities();
+            this.db = new db1ce907233a3c4e8bb553a55200989dc5Entities();
         }
 
-        public CustomerRepository(QuanLyBanSachEntities db)
+        public CustomerRepository(db1ce907233a3c4e8bb553a55200989dc5Entities db)
         {
             this.db = db;
         }

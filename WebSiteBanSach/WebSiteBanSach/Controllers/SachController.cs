@@ -11,7 +11,7 @@ namespace WebSiteBanSach.Controllers
     {
         //
         // GET: /SachMoiPartial/
-        QuanLyBanSachEntities db = new QuanLyBanSachEntities();
+        db1ce907233a3c4e8bb553a55200989dc5Entities db = new db1ce907233a3c4e8bb553a55200989dc5Entities();
         public PartialViewResult SachMoiPartial()
         {
             var lstSachMoi = db.Saches.Take(3).ToList();
