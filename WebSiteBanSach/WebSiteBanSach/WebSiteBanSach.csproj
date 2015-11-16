@@ -538,7 +538,6 @@
     <Content Include="Content\TemplateAdmin\font\glyphiconshalflings-regular.woff" />
     <Content Include="Content\TemplateAdmin\README.md" />
     <Content Include="HinhAnh\Thumbs.db" />
-    <Content Include="HinhAnhSP\Thumbs.db" />
     <EntityDeploy Include="Models\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
