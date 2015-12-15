@@ -1,0 +1,6 @@
+E:\TranNgocThao\CCNM\CK\WebSiteBanSach\AngularJS\bin\AngularJS.dll.config
+E:\TranNgocThao\CCNM\CK\WebSiteBanSach\AngularJS\bin\AngularJS.dll
+E:\TranNgocThao\CCNM\CK\WebSiteBanSach\AngularJS\bin\AngularJS.pdb
+E:\TranNgocThao\CCNM\CK\WebSiteBanSach\AngularJS\obj\Debug\AngularJS.csprojResolveAssemblyReference.cache
+E:\TranNgocThao\CCNM\CK\WebSiteBanSach\AngularJS\obj\Debug\AngularJS.dll
+E:\TranNgocThao\CCNM\CK\WebSiteBanSach\AngularJS\obj\Debug\AngularJS.pdb

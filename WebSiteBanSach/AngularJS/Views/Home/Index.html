@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Index</title>
+    
+</head>
+<body>
+
+    <div id="includedContent"></div>
+
+    
+
+    <link href="~/Content/TrangChuCss.css" rel="stylesheet" />
+
+    <script src="../../Content/assets_user/js/jquery-1.11.2.min.js"></script>
+    <script>
+
+        $(function () {
+            $("#includedContent").load("../../Views/Layout/UserLayout.html #wrapper");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,480 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bookshop</title>
+
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="page-content-wrapper" class="st-pusher">
+            <div class="st-pusher-after"></div>
+
+            <!-- ============================================== HEADER ============================================== -->
+
+            <header class="header">
+                <nav class="navbar navbar-bookshop navbar-static-top" role="navigation">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-10 col-sm-10">
+                                <ul class="nav navbar-nav">
+                                    <li class="hidden-xs hidden-sm"><h6>Hỗ trợ trực tuyến: </h6></li>
+                                    <li class="icon"><a href="#"><i class="icon fa fa-facebook-official"></i>  Facebook</a></li>
+                                    <li class="icon"><a href="#"><i class="icon fa fa-skype"></i>  Skype</a></li>
+                                    <li class="icon"><a href="#"><i class="icon fa fa-yahoo"></i>  Yahoo</a></li>
+                                </ul><!-- /.nav -->
+                            </div><!-- /.col -->
+
+                            <div class="col-md-6 col-sm-2 col-xs-2">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="hidden-xs hidden-sm"><a href="#">Wishlist</a></li>
+                                    <li class="hidden-xs hidden-sm"><a href="#">Giỏ hàng</a></li>
+                                    <li class="hidden-xs hidden-sm"><a href="#">Tài khoản của tôi</a></li>
+                                    <li class="icon icon-small hidden-xs"><a data-toggle="modal" data-target="#modal-login-big" href="#"><i class="icon fa fa-user"></i></a></li>
+                                    <li class="icon hidden-lg hidden-sm hidden-md"><a data-toggle="modal" data-target="#modal-login-small" href="#"><i class="icon fa fa-user fa-lg"></i></a></li>
+                                </ul><!-- /.nav -->
+                            </div><!-- /.col -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                </nav><!-- /.navbar -->
+                <!-- Modal -->
+                <div id="modal-login-big" class="modal login fade hidden-xs" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="text-center">
+                                    <ul class="login-list clearfix ">
+                                        <li class='active'>Đăng nhập</li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Đăng kí</a></li>
+                                    </ul><!-- /.login-list -->
+                                    <form role="form-horizontal" class="inner-top-50">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1" class="sr-only">youremail@example.com</label>
+                                            <input type="email" class="form-control bookshop-form-control" id="exampleInputEmail1" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1" class="sr-only">Mật khẩu</label>
+                                            <input type="password" class="form-control bookshop-form-control" id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary btn-uppercase">Đăng nhập</button>
+                                        <a href="#" class='forgot-password'>Quên mật khẩu</a>
+                                    </form>
+                                </div>
+                            </div><!-- /.modal-body -->
+                            <a href="#" data-dismiss="modal" class="remove-icon"><i class="fa fa-times"></i></a>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+                <!-- Modal -->
+                <div id="modal-login-small" class="modal fade login login-xs hidden-sm hidden-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="text-center">
+                                    <div class="logo-holder">
+                                        <h1 class="logo">BookShop</h1>
+                                        <div class="logo-subtitle">
+                                            <span>Trang web bán sách online</span>
+                                        </div><!-- /.logo-subtitle -->
+                                    </div>
+
+                                    <form role="form" class="inner-top-50">
+                                        <div class="form-group">
+                                            <label for="entername" class="sr-only">Email</label>
+                                            <input type="email" class="form-control bookshop-form-control" id="entername" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="enterpassword" class="sr-only">Mật khẩu</label>
+                                            <input type="password" class="form-control bookshop-form-control" id="enterpassword" placeholder="Password">
+                                        </div>
+
+                                        <button type="button" class="btn btn-primary btn-block btn-uppercase">Đăng nhập</button>
+                                        <a href="#" class='forgot-password'>Quên mật khẩu</a>
+                                    </form>
+                                </div>
+                            </div><!-- /.modal-body -->
+                            <a href="#" data-dismiss="modal" class="remove-icon"><i class="fa fa-times"></i></a>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+                <!-- ============================================== MAIN-HEADER ============================================== -->
+                <div class="main-header">
+                    <div class="container">
+                        <div class="row">
+                            <!-- ============================================== LOGO ============================================== -->
+                            <div class="col-xs-12 col-sm-4 col-md-3 text-center logo-holder">
+                                <a href="#">
+                                    <h1 class="logo">BookShop</h1>
+                                    <div class="logo-subtitle">
+                                        <span>Trang web bán sách online</span>
+                                    </div><!-- /.logo-subtitle -->
+                                </a>
+                            </div><!-- /.logo-holder -->
+                            <!-- ============================================== LOGO : END ============================================== -->
+                            <!-- ============================================== SEARCH BAR ============================================== -->
+                            <div class="col-xs-12 col-sm-4 col-md-7 top-search-holder m-t-10">
+                                <form class="search-form" role="search">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="page-search"><i>Search</i></label>
+                                        <input id="page-search" class="search-input form-control" type="search" placeholder="Tìm kiếm">
+                                    </div>
+                                    <button class="page-search-button">
+                                        <span class="fa fa-search">
+                                            <span class="sr-only">Search</span>
+                                        </span>
+                                    </button>
+                                </form>
+                            </div><!-- /.top-search-holder -->
+                            <!-- ============================================== SEARCH BAR : END ============================================== -->
+                            <!-- ============================================== SHOPPING CART DROPDOWN ============================================== -->
+                            <div class="col-xs-12 col-sm-4 col-md-2 animate-dropdown1 top-cart-row m-t-10">
+                                <ul class="clearfix shopping-cart-block list-unstyled">
+                                    <li class="dropdown">
+                                        <a class="menu-toggle-right clearfix" href=".menu-toggle-right">
+                                            <span class="pull-right cart-right-block">
+                                                <img src="../../Content/assets_user/images/cart-icon.png" alt="" width="46" height="39" />
+                                            </span><!-- /.cart-right-block -->
+                                            <span class="pull-right cart-left-block">
+                                                <span class="cart-block-heading">50,000đ</span>
+                                                <span class="hidden-xs">2 sản phẩm</span>
+                                            </span><!-- /.cart-left-block -->
+                                        </a>
+                                    </li>
+                                </ul> <!-- /.list-unstyled -->
+                            </div><!-- /.top-cart-row -->
+                            <!-- ============================================== SHOPPING CART DROPDOWN : END ============================================== -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                </div><!-- /.main-header -->
+                <!-- ============================================== END MAIN HEADER ============================================== -->
+                <!-- ============================================== NAVBAR ============================================== -->
+                <div class="header-nav animate-dropdown">
+                    <div class="container">
+                        <div class="nav-bg-class">
+                            <!-- ============================================================= NAVBAR PRIMARY ============================================================= -->
+                            <nav class="yamm navbar navbar-primary animate-dropdown" role="navigation">
+                                <div class="navbar-header">
+                                    <button id="btn-navbar-primary-collapse" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div><!-- /.navbar-header -->
+                                <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li class="hidden-sm"><a href="#">Danh Mục</a></li>
+                                        <li class="hidden-sm hidden-md"><a href="#">Nhà Phát Hành</a></li>
+                                        <li><a href="#">Tác Giả</a></li>
+                                        <li class="active"><a href="#">Sách Giảm Giá</a></li>
+                                        <li class="dropdown yamm-fw">
+                                            <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Sách Bán Chạy</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <div class="yamm-content">
+                                                        <div class="row">
+                                                            <div class="col-md-2 col-sm-6">
+                                                                <div class="section">
+                                                                    <h5 class="title">History</h5>
+                                                                    <ul class="links list-unstyled">
+                                                                        <li><a href="#">Indian Independence</a></li>
+                                                                        <li><a href="#">French Revolution</a></li>
+                                                                        <li><a href="#">Industrial Revolution</a></li>
+                                                                        <li><a href="#">Vietnam War</a></li>
+                                                                        <li><a href="#">World War I &amp; II</a></li>
+                                                                        <li><a href="#">Operation Desert Storm</a></li>
+                                                                    </ul>
+                                                                </div><!-- /.section -->
+                                                            </div><!-- /.col -->
+
+                                                            <div class="col-md-2 col-sm-6">
+                                                                <div class="section">
+                                                                    <h5 class="title">Science</h5>
+                                                                    <ul class="links list-unstyled">
+                                                                        <li><a href="#">Applied Science</a></li>
+                                                                        <li><a href="#">Astronomy</a></li>
+                                                                        <li><a href="#">Biotechnology</a></li>
+                                                                        <li><a href="#">Chemistry</a></li>
+                                                                        <li><a href="#">Cognitive Science</a></li>
+                                                                        <li><a href="#">Cosmology</a></li>
+                                                                    </ul>
+                                                                </div><!-- /.section -->
+                                                            </div><!-- /.col -->
+
+                                                            <div class="col-md-2 col-sm-6">
+                                                                <div class="section">
+                                                                    <h5 class="title">History</h5>
+                                                                    <ul class="links list-unstyled">
+                                                                        <li><a href="#">Indian Independence</a></li>
+                                                                        <li><a href="#">French Revolution</a></li>
+                                                                        <li><a href="#">Industrial Revolution</a></li>
+                                                                        <li><a href="#">Vietnam War</a></li>
+                                                                        <li><a href="#">World War I &amp; II</a></li>
+                                                                        <li><a href="#">Operation Desert Storm</a></li>
+                                                                    </ul>
+                                                                </div><!-- /.section -->
+                                                            </div><!-- /.col -->
+
+                                                            <div class="col-md-2 col-sm-6">
+                                                                <div class="section">
+                                                                    <h5 class="title">Science</h5>
+                                                                    <ul class="links list-unstyled">
+                                                                        <li><a href="#">Applied Science</a></li>
+                                                                        <li><a href="#">Astronomy</a></li>
+                                                                        <li><a href="#">Biotechnology</a></li>
+                                                                        <li><a href="#">Chemistry</a></li>
+                                                                        <li><a href="#">Cognitive Science</a></li>
+                                                                        <li><a href="#">Cosmology</a></li>
+                                                                    </ul>
+                                                                </div><!-- /.section -->
+                                                            </div><!-- /.col -->
+
+                                                            <div class="col-md-2 col-sm-6">
+                                                                <div class="section">
+                                                                    <h5 class="title">History</h5>
+                                                                    <ul class="links list-unstyled">
+                                                                        <li><a href="#">Indian Independence</a></li>
+                                                                        <li><a href="#">French Revolution</a></li>
+                                                                        <li><a href="#">Industrial Revolution</a></li>
+                                                                        <li><a href="#">Vietnam War</a></li>
+                                                                        <li><a href="#">World War I &amp; II</a></li>
+                                                                        <li><a href="#">Operation Desert Storm</a></li>
+                                                                    </ul>
+                                                                </div><!-- /.section -->
+                                                            </div><!-- /.col -->
+
+                                                            <div class="col-md-2 col-sm-6">
+                                                                <div class="section">
+                                                                    <h5 class="title">Science</h5>
+                                                                    <ul class="links list-unstyled">
+                                                                        <li><a href="#">Applied Science</a></li>
+                                                                        <li><a href="#">Astronomy</a></li>
+                                                                        <li><a href="#">Biotechnology</a></li>
+                                                                        <li><a href="#">Chemistry</a></li>
+                                                                        <li><a href="#">Cognitive Science</a></li>
+                                                                        <li><a href="#">Cosmology</a></li>
+                                                                    </ul>
+                                                                </div><!-- /.section -->
+                                                            </div><!-- /.col -->
+                                                        </div>
+                                                    </div>
+
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Sách Mới Phát Hành</a></li>
+                                    </ul><!-- /.nav -->
+                                </div><!-- /.collapse navbar-collapse -->
+                            </nav><!-- /.yamm -->
+                            <!-- ================================================== NAVBAR PRIMARY : END ======================================================= -->
+                        </div><!-- /.nav-bg-class -->
+                    </div><!-- /.container -->
+                </div><!-- /.header-nav -->
+                <!-- ============================================== NAVBAR : END ============================================== -->
+            </header>
+            <!-- ============================================== HEADER : END ============================================== -->
+            <!-- ============================================== CONTENT PAGE ============================================== -->
+            <div class="home-page">
+                <div class="content">
+
+
+                </div><!-- /.content -->
+            </div><!-- /.home-page -->
+            <!-- ============================================== FOOTER ============================================== -->
+            <footer class="footer clearfix">
+                <div class="margin-top-10">
+                    <div class="container inner-top-vs">
+                        <!-- ============================================== FOOTER-TOP ============================================== -->
+                        <div class="row">
+                            <div class="col-md-3 col-sm-4">
+                                <div class="footer-module">
+                                    <h4 class="footer-module-title">Hỗ trợ khách hàng</h4>
+                                    <div class="footer-module-body clearfix">
+                                        <ul class="list-unstyled link-list" style="width:100%">
+                                            <li><a href="#">Các câu hỏi thường gặp</a></li>
+                                            <li><a href="#">Email</a></li>
+                                            <li><a href="#">Hotline: 1900-123</a></li>
+                                            <li><a href="#">Hướng dẫn đặt hàng</a></li>
+                                            <li><a href="#">Phương thức vận chuyển</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-4">
+                                <div class="footer-module">
+                                    <h4 class="footer-module-title">Danh mục</h4>
+                                    <div class="footer-module-body clearfix">
+                                        <ul class="list-unstyled link-list">
+                                            <li><a href="#">Ngoại Văn</a></li>
+                                            <li><a href="#">Kinh Tế</a></li>
+                                            <li><a href="#">Văn Học Trong Nước</a></li>
+                                            <li><a href="#">Văn Học Nước Ngoài</a></li>
+                                            <li><a href="#">Thiếu Nhi</a></li>
+                                        </ul>
+
+                                        <ul class="list-unstyled link-list">
+                                            <li><a href="#">Tin Học - Ngoại Ngữ</a></li>
+                                            <li><a href="#">Chuyên Ngành</a></li>
+                                            <li><a href="#">Giáo Khoa - Giáo Trình</a></li>
+                                            <li><a href="#">Thường Thức - Đời Sống</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-4 clearfix ">
+                                <div class="footer-module">
+                                    <h4 class="footer-module-title">Tài khoản của bạn</h4>
+                                    <div class="footer-module-body clearfix">
+                                        <ul class="list-unstyled link-list" style="width:100%">
+                                            <li><a href="#">Xem trạng thái đơn hàng</a></li>
+                                            <li><a href="#">Lịch sử đơn hàng</a></li>
+                                            <li><a href="#">Quên mật khẩu</a></li>
+                                            <li><a href="#">Điều khoản sử dụng</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12">
+                                <div class="footer-module">
+                                    <h4 class="footer-module-title">Theo Dõi</h4>
+                                    <div class="footer-module-body clearfix">
+                                        <ul class="clearfix list-unstyled footer-social-contact">
+                                            <li><a href="#" class="fa fa-facebook" title="Facebook"></a></li>
+                                            <li><a href="#" class="fa fa-pinterest" title="Pinterest"></a></li>
+                                            <li><a href="#" class="fa fa-linkedin" title="Linkedin"></a></li>
+                                            <li><a href="#" class="fa fa-twitter" title="Twitter"></a></li>
+                                            <li><a href="#" class="fa fa-google-plus" title="Google Plus"></a></li>
+                                            <li><a href="#" class="fa fa-rss" title="Rss"></a></li>
+                                            <li><a href="#" class="fa fa-instagram" title="Instagram"></a></li>
+
+                                        </ul>
+
+
+                                        <div class="inner-top-xs">
+                                            <p>Đăng ký nhận bản tin</p>
+                                            <form class="searchform" method="get">
+                                                <input class="s" type="text" placeholder="Địa chỉ Email" name="s" value="">
+                                                <input class="searchsubmit" type="submit" value="Đăng ký">
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============================================== FOOTER-TOP : END ============================================== -->            <hr>
+                        <!-- ============================================== FOOTER-BOTTOM ============================================== -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="pull-left">
+                                    <ul class="payment-list list-unstyled">
+                                        <li><a href="#"><img src="../../Content/assets_user/images/payments/1.png" class="img-responsive" height="22" alt=""></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============================================== FOOTER-BOTTOM : END ============================================== -->
+                    </div>
+                </div>
+            </footer>
+
+            <a href="#" class="scrollToTop"><i class="fa fa-chevron-circle-up fa-5x"></i></a>
+            <!-- ============================================== FOOTER : END ============================================== -->
+        </div><!-- /.st-pusher -->
+        <!-- ============================================== TOGGLE RIGHT CONTENT ============================================== -->
+
+        <div id="cart-dropdown-wrapper">
+            <nav id="menu1" class="cart-dropdown">
+                <h2 class="shopping-cart-heading">Giỏ hàng</h2>
+                <div class="cart-items">
+                    <div class="cart-items-list">
+                        <ul>
+                            <li class="media">
+
+                                <div class="clearfix book cart-book">
+                                    <a href="index.php?page=single-book" class="media-left">
+                                        <div class="book-cover">
+                                            <img width="140" height="212" alt="" src="../../Content/assets_user/images/blank.gif" data-echo="../../Content/assets_user/images/book-covers/1.jpg">
+                                        </div>
+                                    </a>
+                                    <div class="media-body book-details">
+                                        <div class="book-description">
+                                            <h3 class="book-title"><a href="index.php?page=single-book">The Brief Wondrous Life of  Oscar Wao</a></h3>
+                                            <p class="book-subtitle">tác giả <a href="index.php?page=single-book">Cormac McCarthy</a></p>
+                                            <p class="price m-t-20">25,000đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </li>
+                            <li class="media">
+
+                                <div class="clearfix book cart-book">
+                                    <a href="index.php?page=single-book" class="media-left">
+                                        <div class="book-cover">
+                                            <img width="140" height="212" alt="" src="../../Content/assets_user/images/blank.gif" data-echo="../../Content/assets_user/images/book-covers/2.jpg">
+                                        </div>
+                                    </a>
+                                    <div class="media-body book-details">
+                                        <div class="book-description">
+                                            <h3 class="book-title"><a href="index.php?page=single-book">The Brief Wondrous Life of  Oscar Wao</a></h3>
+                                            <p class="book-subtitle">tác giả <a href="index.php?page=single-book">Cormac McCarthy</a></p>
+                                            <p class="price m-t-20">25,000đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="cart-item-footer">
+                        <h3 class='total text-center'>Tổng cộng: <span>50,000đ</span></h3>
+                        <div class="proceed-to-checkout text-center">
+                            <button type="button" class="btn btn-primary btn-uppercase">Thanh toán</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </nav>
+        </div>
+
+        <!-- ============================================== TOGGLE RIGHT CONTENT : END ============================================== -->
+    </div><!-- /#wrapper -->
+    <!-- Bootstrap -->
+    <link href="../../Content/assets_user/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../Content/assets_user/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../Content/assets_user/css/animate.min.css" rel="stylesheet">
+    <link href="../../Content/assets_user/css/main.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../Content/assets_user/images/favicon.ico">
+
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <script src="../../Content/assets_user/js/jquery-1.11.2.min.js"></script>
+    <script src="../../Content/assets_user/js/bootstrap.min.js"></script>
+    <script src="../../Content/assets_user/js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="../../Content/assets_user/js/owl.carousel.min.js"></script>
+    <script src="../../Content/assets_user/js/perfect-scrollbar.min.js"></script>
+    <script src="../../Content/assets_user/js/jquery-ui.min.js"></script>
+    <script src="../../Content/assets_user/js/jquery.customSelect.min.js"></script>
+    <script src="../../Content/assets_user/js/jquery.easing-1.3.min.js"></script>
+    <script src="../../Content/assets_user/js/wow.min.js"></script>
+    <script src="../../Content/assets_user/js/echo.min.js"></script>
+    <script src="../../Content/assets_user/js/scripts.js"></script>
+</body>
+</html>
