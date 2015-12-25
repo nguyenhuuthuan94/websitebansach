@@ -388,6 +388,7 @@
     <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="packages.config" />
+    <Content Include="Index.html" />
     <Content Include="Views\Home\Index.html" />
     <Content Include="Views\Layout\AdminLayout.cshtml" />
     <Content Include="Views\Layout\NguoiDungLayout.cshtml" />

@@ -1,23 +1,51 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Index</title>
-    
-</head>
-<body>
+﻿
+<div>
+    <!-- ============================================== BEST SELLER ============================================== -->
+    <div class="best-seller wow fadeInUp">
+        <div id="best-seller" class="module">
 
-    <div id="includedContent"></div>
+            <div class="module-heading home-page-module-heading">
+                <h2 class="module-title home-page-module-title"><span>Sách Bán Chạy</span></h2>
+            </div><!-- /.module-heading -->
 
-    
+            <div class="module-body">
+                <div class="row books full-width">
+                    <div class="clearfix text-center">
 
-    <link href="~/Content/TrangChuCss.css" rel="stylesheet" />
+                        <div class="col-md-3 col-sm-6" ng-repeat="product in products">
+                            <div class="book">
+                                <a href="book-detail.html">
+                                    <div class="book-cover">
+                                        <img width="140" height="212" alt="" ng-src="../../HinhAnhSP/{{product.AnhBia}}">
+                                    </div>
+                                </a>
+                                <div class="book-details clearfix">
+                                    <div class="book-description">
+                                        <h3 class="book-title"><a href="book-detail.html">{{product.TenSach}}</a></h3>
+                                        <a class="book-subtitle" href="book-detail.html"> Gregory Berns </a>
+                                    </div>
+                                    <div class="text-center">
+                                        <div>
+                                            <span>{{product.GiaBan}}</span>
+                                            <div>
+                                                <a title="Add to Cart" href="book-detail.html">Thêm vào giỏ hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-    <script src="../../Content/assets_user/js/jquery-1.11.2.min.js"></script>
-    <script>
 
-        $(function () {
-            $("#includedContent").load("../../Views/Layout/UserLayout.html #wrapper");
-        });
-    </script>
-</body>
-</html>
+
+
+                    </div>
+
+                    <a href="#" class="text-right"><h6>Xem tất cả</h6></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================== BEST SELLER : END ============================================== -->	
+</div>
