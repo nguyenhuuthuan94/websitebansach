@@ -5,14 +5,30 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using WebAPI.Models;
 
 namespace WebAPI.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class HomeAPIController : ApiController
     {
+        #region Helper
+        public HttpResponseMessage CreateResponse<T>(HttpStatusCode statusCode, T data)
+        {
+            return Request.CreateResponse(statusCode, data);
+        }
+        public HttpResponseMessage CreateResponse(HttpStatusCode statusCode)
+        {
+            return Request.CreateResponse(statusCode);
+
+
+        }
+
+        #endregion
+
         [HttpGet]
-        [Route("api/home/all")]
+        [Route("home/all")]
         public IHttpActionResult GetAll()
         {
             using (QuanLyBanSachEntities ctx = new QuanLyBanSachEntities())
@@ -23,6 +39,5 @@ namespace WebAPI.Controllers
                 return Ok(ret);
             }
         }
-
     }
 }

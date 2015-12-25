@@ -359,6 +359,7 @@
     <Content Include="HinhAnh\Anh2.png" />
     <Content Include="HinhAnh\Anh3.png" />
     <Content Include="HinhAnh\imgSearch.png" />
+    <Content Include="js\script.js" />
     <Content Include="script.js" />
     <Content Include="Controllers\script.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -1249,6 +1250,8 @@
     <Content Include="tempt.html" />
     <Content Include="Views\Layout\template.html" />
     <Content Include="Views\Layout\UserLayout.html" />
+    <Content Include="Views\User\login.html" />
+    <Content Include="Views\User\signup.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

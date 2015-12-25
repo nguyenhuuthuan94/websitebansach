@@ -39,10 +39,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.1.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
       <Private>True</Private>
@@ -175,19 +180,76 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeAPIController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\aaaa.cs">
+      <DependentUpon>qlbs.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ChiTietDonHang.cs">
+      <DependentUpon>qlbs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChuDe.cs">
+      <DependentUpon>qlbs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ddddd.cs">
+      <DependentUpon>qlbs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DonHang.cs">
+      <DependentUpon>qlbs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dsadsa.cs">
+      <DependentUpon>qlbs.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\KhachHang.cs">
+      <DependentUpon>qlbs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NhaXuatBan.cs">
+      <DependentUpon>qlbs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\qlbs.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>qlbs.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\qlbs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>qlbs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\qlbs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>qlbs.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sach.cs">
+      <DependentUpon>qlbs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SachModel.cs" />
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>qlbs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TacGia.cs">
+      <DependentUpon>qlbs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ThamGia.cs">
+      <DependentUpon>qlbs.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\QuanLyBanSach.mdf" />
+    <Content Include="App_Data\QuanLyBanSach_log.ldf">
+      <DependentUpon>QuanLyBanSach.mdf</DependentUpon>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -197,11 +259,33 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Models\qlbs.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>qlbs.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\qlbs.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>qlbs.edmx</DependentUpon>
+      <LastGenOutput>qlbs.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\qlbs.edmx.diagram">
+      <DependentUpon>qlbs.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\qlbs.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>qlbs.edmx</DependentUpon>
+      <LastGenOutput>qlbs.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

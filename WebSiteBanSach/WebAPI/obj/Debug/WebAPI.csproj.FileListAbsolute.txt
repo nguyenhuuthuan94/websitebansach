@@ -6,11 +6,14 @@ E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebAPI\bin\EntityFramework.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebAPI\bin\EntityFramework.SqlServer.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebAPI\bin\Newtonsoft.Json.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebAPI\bin\System.Net.Http.Formatting.dll
+E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebAPI\bin\System.Web.Cors.dll
+E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebAPI\bin\System.Web.Http.Cors.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebAPI\bin\System.Web.Http.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebAPI\bin\System.Web.Http.WebHost.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebAPI\bin\AutoMapper.xml
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebAPI\bin\EntityFramework.xml
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebAPI\bin\EntityFramework.SqlServer.xml
+E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebAPI\bin\System.Web.Http.Cors.xml
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebAPI\bin\Newtonsoft.Json.xml
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebAPI\bin\System.Net.Http.Formatting.xml
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebAPI\bin\System.Web.Http.xml

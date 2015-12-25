@@ -1,7 +1,9 @@
+E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\obj\Debug\WebService.csprojResolveAssemblyReference.cache
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\WebService.dll.config
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\WebService.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\WebService.pdb
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\Antlr3.Runtime.dll
+E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\AutoMapper.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\EntityFramework.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\EntityFramework.SqlServer.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\Microsoft.AspNet.Identity.Core.dll
@@ -20,7 +22,9 @@ E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\Microsoft.Web.Infrastructu
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\Newtonsoft.Json.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\Owin.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\System.Net.Http.Formatting.dll
+E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\System.Web.Cors.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\System.Web.Helpers.dll
+E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\System.Web.Http.Cors.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\System.Web.Http.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\System.Web.Http.Owin.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\System.Web.Http.WebHost.dll
@@ -31,6 +35,8 @@ E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\System.Web.WebPages.Deploy
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\System.Web.WebPages.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\System.Web.WebPages.Razor.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\WebGrease.dll
+E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\AutoMapper.xml
+E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\System.Web.Http.Cors.xml
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\Newtonsoft.Json.xml
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\System.Net.Http.Formatting.xml
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\System.Web.Helpers.xml
@@ -58,9 +64,5 @@ E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\Microsoft.Owin.Security.Go
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\Microsoft.Owin.Security.Twitter.xml
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\System.Web.Http.Owin.xml
-E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\obj\Debug\WebService.csprojResolveAssemblyReference.cache
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\obj\Debug\WebService.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\obj\Debug\WebService.pdb
-E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\System.Web.Cors.dll
-E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\System.Web.Http.Cors.dll
-E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\System.Web.Http.Cors.xml
