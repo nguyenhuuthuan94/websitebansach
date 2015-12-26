@@ -27,16 +27,17 @@
                                     <li class="icon"><a href="#"><i class="icon fa fa-yahoo"></i>  Yahoo</a></li>
                                 </ul><!-- /.nav -->
                             </div><!-- /.col -->
-                            <div class="col-md-6 col-sm-2 col-xs-2">
-                                <button type="button" class="btn btn-success" ng-click="login()"><span id="icon" class="glyphicon glyphicon-log-in"></span></button>
+                            <div class="col-md-6 col-sm-2 col-xs-2" ng-controller="tempController" id="id">
+                                <button type="button" class="btn btn-success" ng-click="login()"><span id="icon" class="glyphicon glyphicon-log-in"></span> {{titleUser}}</button>
                                 <button type="button" class="btn btn-warning hidden" ng-click="logout()"> <span class="glyphicon glyphicon-log-out"></span> Log out</button><br />
                                 <!--<ul class="nav navbar-nav navbar-right">
-                                    <li class="hidden-xs hidden-sm"><a href="#">Wishlist</a></li>
-                                    <li class="hidden-xs hidden-sm"><a href="#">Giỏ hàng</a></li>
-                                    <li class="hidden-xs hidden-sm"><a href="#">Tài khoản của tôi</a></li>
-                                    <li class="icon icon-small hidden-xs"><a data-toggle="modal" data-target="#modal-login-big" href="#"><i class="icon fa fa-user"></i></a></li>
-                                    <li class="icon hidden-lg hidden-sm hidden-md"><a data-toggle="modal" data-target="#modal-login-small" href="#"><i class="icon fa fa-user fa-lg"></i></a></li>
-                                </ul>--><!-- /.nav -->
+            <li class="hidden-xs hidden-sm"><a href="#">Wishlist</a></li>
+            <li class="hidden-xs hidden-sm"><a href="#">Giỏ hàng</a></li>
+            <li class="hidden-xs hidden-sm"><a href="#">Tài khoản của tôi</a></li>
+            <li class="icon icon-small hidden-xs"><a data-toggle="modal" data-target="#modal-login-big" href="#"><i class="icon fa fa-user"></i></a></li>
+            <li class="icon hidden-lg hidden-sm hidden-md"><a data-toggle="modal" data-target="#modal-login-small" href="#"><i class="icon fa fa-user fa-lg"></i></a></li>
+        </ul>-->
+                                <!-- /.nav -->
                             </div><!-- /.col -->
                         </div><!-- /.row -->
                     </div><!-- /.container -->
@@ -455,8 +456,11 @@
     <script src="Scripts/angular.min.js"></script>
     <script src="Scripts/angular-route.min.js"></script>
     
-    <script src="script.js"></script>
-
+    
+    <script src="js/script.js"></script>
+    <script src="Controllers/loginController.js"></script>
+    <script src="Controllers/tempController.js"></script>
     <!--<script src="../../Controllers/script.js"></script>-->
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
 </body>
 </html>

@@ -281,6 +281,8 @@
     <Content Include="Content\TemplateAdmin\ui.html" />
     <Content Include="Content\TemplateAdmin\widgets.html" />
     <Content Include="Content\TrangChuCss.css" />
+    <Content Include="Controllers\loginController.js" />
+    <Content Include="Controllers\tempController.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="HinhAnhSP\000001.jpg" />
     <Content Include="HinhAnhSP\000002.jpg" />
@@ -359,9 +361,9 @@
     <Content Include="HinhAnh\Anh2.png" />
     <Content Include="HinhAnh\Anh3.png" />
     <Content Include="HinhAnh\imgSearch.png" />
+    <Content Include="HinhAnh\warning.png" />
     <Content Include="js\script.js" />
     <Content Include="script.js" />
-    <Content Include="Controllers\script.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -477,7 +479,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="b.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
@@ -1247,9 +1248,6 @@
     <Content Include="Scripts\i18n\angular-locale_zh.js" />
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
-    <Content Include="tempt.html" />
-    <Content Include="Views\Layout\template.html" />
-    <Content Include="Views\Layout\UserLayout.html" />
     <Content Include="Views\User\login.html" />
     <Content Include="Views\User\signup.html" />
     <Content Include="Web.config" />
@@ -1257,6 +1255,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
