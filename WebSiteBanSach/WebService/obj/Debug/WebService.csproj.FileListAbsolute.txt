@@ -1,4 +1,3 @@
-E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\obj\Debug\WebService.csprojResolveAssemblyReference.cache
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\WebService.dll.config
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\WebService.dll
 E:\TranNgocThao\CCNM\CK\WebSiteBanSach\WebService\bin\WebService.pdb
